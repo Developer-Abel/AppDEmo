@@ -1,0 +1,94 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>login</ion-title>
+    </ion-toolbar>
+</ion-header>
+<style>
+    #login {
+        margin-top: 15px;
+    }
+    
+    ion-list {
+        width: 80%;
+        text-align: center;
+    }
+    
+    @media screen and (min-width:640px) {
+        ion-list {
+            width: 50%;
+        }
+    }
+    
+    #login .btn-login button {
+        background: linear-gradient(to right, rgba(239, 57, 255, 1) 0%, rgba(239, 57, 255, 1) 22%, rgba(108, 65, 207, 1) 71%, rgba(108, 65, 207, 1) 100%);
+        width: 100%;
+        padding: 15px 15px;
+        color: white;
+        margin-top: 15px;
+        border-radius: 7px;
+        font-size: 1.1em;
+    }
+    
+    #login .btn-redes button {
+        width: 100%;
+        padding: 7px 0px;
+        color: white;
+        margin: 15px 5px 0px 5px;
+        border-radius: 7px;
+        font-size: 0.8em;
+    }
+    
+    #login .btn-redes {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #login input {
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 15px 8px;
+        width: 100%;
+        text-align: center;
+        color: black;
+    }
+    
+    #login ion-label {
+        color: grey;
+    }
+</style>
+
+<ion-content>
+    <div id="login">
+        <ion-col style="display: flex; justify-content: center">
+            <div style="width: 110px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Ingress_Logo.png" alt="" width="100%">
+            </div>
+        </ion-col>
+        <br>
+        <br>
+        <ion-col style=" display: flex; justify-content: center;">
+            <ion-list>
+                <div>
+                    <input type="text" placeholder="Username" style="margin-bottom: 10px;">
+                    <input type="password" placeholder="Password" style="margin-top: 10px;">
+                </div>
+                <br>
+                <br>
+                <div class="btn-login">
+                    <button block>Login</button>
+                </div>
+                <br>
+                <br>
+                <div class="btn-redes">
+                    <button style="background-color: #3B5999;"> <ion-icon name="logo-facebook" style="font-size: 2em"></ion-icon></button>
+                    <button style="background-color: white; border: 1px solid grey; "><ion-icon class="icons8-logo-de-google" ></ion-icon></button>
+                </div>
+                <br>
+                <ion-label>
+                    No te has registrado? <a href="http://">registrate</a>
+                </ion-label>
+            </ion-list>
+
+        </ion-col>
+    </div>
+</ion-content>

@@ -1,0 +1,22 @@
+#platillo ion-card-content {
+    text-align: center;
+}
+
+#platillo ion-card {
+    width: 90%;
+    margin: 0%;
+}
+
+#platillo img {
+    width: 100%;
+}
+
+.zoomIn {
+    transition: transform .8s;
+}
+
+.zoomIn:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
